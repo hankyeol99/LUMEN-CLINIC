@@ -1,0 +1,170 @@
+{
+  "hero-treatment-room": {
+    "uuid": "6ebd12cc-d6d8-5b12-a58f-11e70067cbd8",
+    "alt": "청담 LUMEN 클리닉 트리트먼트 룸 — 자연광과 스톤 인테리어",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "hero-treatment-suite": {
+    "uuid": "973338a9-6826-5c87-af43-d7b40f282930",
+    "alt": "웜 베이지 트리트먼트 스위트",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "hero-counter": {
+    "uuid": "b8c40567-4544-5ce5-821c-be6dfb3a9f66",
+    "alt": "제품 카운터와 디스플레이 영역",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "hero-lounge": {
+    "uuid": "fc52d3ba-3c16-5802-a274-d9e98d2d4df9",
+    "alt": "클리닉 라운지 — 부클레 소파와 라운드 테이블",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "hero-detail-ceramic": {
+    "uuid": "3c8edec7-270a-5c04-b441-549a5adbb808",
+    "alt": "세라믹 베젤 디테일",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "hero-detail-linen": {
+    "uuid": "5c2db61a-8347-5272-b0b1-005a78a9bf7f",
+    "alt": "리넨 스워치 텍스처",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "philosophy-balance": {
+    "uuid": "09c8099a-a0cd-56c2-b342-c11003bdaed5",
+    "alt": "균형의 회복 — 피부 본연의 흐름",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "philosophy-consultation": {
+    "uuid": "be420087-db92-550e-97d3-34957b3a8fb9",
+    "alt": "상태 우선의 1:1 상담",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "philosophy-personal-plan": {
+    "uuid": "83815a88-c31a-594b-985f-50c88d9050cd",
+    "alt": "개인 맞춤 케어 플랜",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "philosophy-private-space": {
+    "uuid": "4b62549f-2dbc-578c-85bc-b16002041ebf",
+    "alt": "프라이빗한 케어 공간",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "program-skin-balance": {
+    "uuid": "34b8ad4a-ba69-59a1-b39f-b01a99554459",
+    "alt": "스킨 밸런스 케어",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "program-tone-texture": {
+    "uuid": "b0452ef2-0485-59c4-9baf-16f5bf47b82b",
+    "alt": "톤 & 텍스처 케어",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "program-anti-aging": {
+    "uuid": "61aa2a40-3ee6-5792-80fa-4be56e6cf0f6",
+    "alt": "안티에이징 케어",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "program-pore-sebum": {
+    "uuid": "50fb874c-f0a0-5b46-9652-7c54d5d644fd",
+    "alt": "모공 & 유분 케어",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "program-sensitive": {
+    "uuid": "8f9a4367-1e81-5759-941a-42584fad2f22",
+    "alt": "민감 피부 케어",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "program-post-care": {
+    "uuid": "6d0e95d3-ea4f-57e5-bcad-449e670d0212",
+    "alt": "포스트 케어 프로그램",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "space-reception": {
+    "uuid": "f2197543-daa0-549d-aa47-3d1d73ba693c",
+    "alt": "리셉션 공간",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "space-consultation": {
+    "uuid": "b2a5f0be-440b-5172-bf37-3e29618ad06d",
+    "alt": "상담실",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "space-care-room-a": {
+    "uuid": "e428c1a7-7901-5a42-a6b9-e9534c601e73",
+    "alt": "케어룸 A",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "space-care-room-b": {
+    "uuid": "b83377d9-108f-5928-8834-b3d6a65df193",
+    "alt": "케어룸 B",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "space-powder-room": {
+    "uuid": "87be1a92-d106-5b6d-b125-705fd279dfc2",
+    "alt": "파우더룸",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "space-lounge": {
+    "uuid": "62a621a0-ff2c-540c-b616-909f42e175db",
+    "alt": "라운지",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "concerns-pigmentation": {
+    "uuid": "748b8b52-3f9c-5ac6-b8d3-6570a093d15f",
+    "alt": "색소 침착 — 기미 · 잡티 · 흉터 자국",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "concerns-acne": {
+    "uuid": "ca45a116-d471-567d-8579-c50c79137a3c",
+    "alt": "여드름 · 흉터 — 활동성 여드름과 자국",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "concerns-pores": {
+    "uuid": "2b7785dd-5b94-5b23-ab97-542e727ba7b0",
+    "alt": "모공 · 유분 — 확장 모공과 블랙헤드",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "concerns-aging": {
+    "uuid": "d6efbdae-c040-5a6b-91ac-6d4fcf553c0d",
+    "alt": "노화 · 탄력 저하 — 잔주름과 처짐",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "concerns-sensitivity": {
+    "uuid": "a27b73ca-c99a-519c-beba-3df40d617e9b",
+    "alt": "민감 · 홍조 — 붉어짐과 자극 반응",
+    "ext": ".png",
+    "mime": "image/png"
+  },
+  "concerns-lifting": {
+    "uuid": "e4a39749-4efb-5456-b07a-0b12808d7c25",
+    "alt": "리프팅 · 윤곽 — 처진 윤곽과 늘어진 피부",
+    "ext": ".png",
+    "mime": "image/png"
+  }
+}

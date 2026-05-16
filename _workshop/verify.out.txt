@@ -1,0 +1,10 @@
+Template length: 296133
+section-head--flush? true
+--bp-tablet? true
+1024px? true
+640px? true
+880px (should be 0): 0
+980px (should be 0): 0
+600px (should be 0): 0
+700px (should be 0): 0
+hero__stat !important (should be 0): 0
