@@ -165,6 +165,37 @@ function Program() {
   const [active, setActive] = useState2("p1");
   const current = programs.find(p => p.id === active);
 
+  // Mobile carousel active-dot tracking. IntersectionObserver with the track
+  // as root didn't fire reliably in this snap container, so we read scrollLeft
+  // and round to the nearest slide index instead.
+  const carouselRef = React.useRef(null);
+  const [carouselIdx, setCarouselIdx] = useState2(0);
+  useEffect2(() => {
+    const track = carouselRef.current;
+    if (!track) return;
+    const update = () => {
+      const slides = track.querySelectorAll(".program__carousel-slide");
+      if (!slides.length) return;
+      const first = slides[0];
+      const second = slides[1];
+      // Step = slide width + gap. Fall back to slide width if only one slide.
+      const step = second
+        ? second.getBoundingClientRect().left - first.getBoundingClientRect().left
+        : first.getBoundingClientRect().width;
+      if (step <= 0) return;
+      const idx = Math.round(track.scrollLeft / step);
+      const clamped = Math.max(0, Math.min(slides.length - 1, idx));
+      setCarouselIdx(clamped);
+    };
+    update();
+    track.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => {
+      track.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, []);
+
   return (
     <section className="section program section--soft" id="program">
       <div className="wrap">
@@ -224,6 +255,46 @@ function Program() {
               </button>
             </div>
           </aside>
+        </div>
+
+        <div className="program__carousel" role="region" aria-label="프로그램 캐러셀">
+          <ul className="program__carousel-track" ref={carouselRef}>
+            {programs.map((p) => (
+              <li className="program__carousel-slide" key={p.id}>
+                <ImageBox
+                  name={p.img}
+                  className="program__carousel-img"
+                  alt={p.kr}
+                />
+                <div className="program__carousel-body">
+                  <div className="program__carousel-tag">{p.tag}</div>
+                  <h3 className="program__carousel-title">
+                    <span className="serif">{p.en}</span>
+                  </h3>
+                  <div className="program__carousel-kr">{p.kr}</div>
+                  <p className="program__carousel-desc">{p.desc}</p>
+                  <div className="program__carousel-meta">{p.meta}</div>
+                  <button
+                    type="button"
+                    className="btn btn--ghost program__carousel-cta"
+                    onClick={openConsult}
+                  >
+                    상담 문의 <ArrowIcon />
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div className="program__carousel-pagination" aria-hidden="true">
+            {programs.map((_, i) => (
+              <span
+                className={
+                  "program__carousel-dot" + (i === carouselIdx ? " is-active" : "")
+                }
+                key={i}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
