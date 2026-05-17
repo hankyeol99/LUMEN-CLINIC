@@ -4982,6 +4982,14 @@ body.modal-open { overflow: hidden; }
   .space__img .img__caption { display: none; }
   .space__img::after { display: none; }
 
+  /* Space — 모바일에서는 한 줄에 한 이미지만 노출. tile--6의 와이드(16:6)는
+     세로로 묶일 때 너무 납작해 보이므로 다른 타일과 같은 4:3으로 정렬. */
+  .space__grid { grid-template-columns: 1fr; }
+  .space__tile--6 { grid-column: span 1; }
+  .space__tile--1 .space__img,
+  .space__tile--2 .space__img,
+  .space__tile--6 .space__img { aspect-ratio: 4 / 3; }
+
   /* Program — 1~6 리스트와 단일 디테일을 모두 숨기고 6슬라이드 캐러셀로 대체.
      좁은 화면에서 list+detail이 세로로 길게 쌓이며 흐름이 무너지던 문제를 해소. */
   .program__list,
